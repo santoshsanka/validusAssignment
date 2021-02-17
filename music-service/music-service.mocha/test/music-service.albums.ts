@@ -13,7 +13,7 @@ const env = configEnv[process.env.NODE_ENV];
 describe('Music Service Albums:', function () {
 
   describe('Music Service - Get Albums', function () {
-    
+    // Defect: Able to call REST servie without authentication token
     it('Should successfully get a list of albums', function (done) {
       chai.request(env.url)
         .get('/albums')
